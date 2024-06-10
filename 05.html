@@ -10,6 +10,7 @@
 				height: 5rem;
 				width: 5rem;
 				border: 1px solid;
+				flex-basis: 5rem;
 			}
 			.box-1 {
 				background: #db5a3a;
@@ -25,6 +26,13 @@
 				display: flex;
 				justify-content: center;
 				gap: 1rem;
+				flex-wrap: wrap;
+			}
+
+			@media (max-width:600px){
+				.main{
+					justify-content: start;
+				}
 			}
 		</style>
 	</head>

@@ -14,42 +14,41 @@
 			}
 			.box-1 {
 				background: #db5a3a;
+				transition: width 2s ease;
 			}
+
 			.box-2 {
 				background: #8bd48b;
-				
+				transition: margin-left 1s ease;
 			}
+
 			.box-3 {
 				background: #9e63e2;
+				transition: background-color 1s ease;
+			}
+
+			.box-1:hover{
+				width: 100%;
+			}
+
+			.box-2:hover{
+				margin-left: 5rem;
+			}
+
+			.box-3:hover{
+				background-color: #f7b1e1;
 			}
 
 			.main{
-				display: block;
 				width: 18rem;
-			}
-
-			.box-center{
-				display: flex;
-				justify-content: center;
-			}
-
-			.box-end{
-				display: flex;
-				justify-content: end;
 			}
 		</style>
 	</head>
 	<body>
 		<div class="main">
-			<div>
-				<div class="box box-1"></div>
-			</div>
-			<div class="box-center">
-				<div class="box box-2"></div>
-			</div>
-			<div class="box-end">
-				<div class="box box-3"></div>
-			</div>
+			<div class="box box-1"></div>
+			<div class="box box-2"></div>
+			<div class="box box-3"></div>
 		</div>
 	</body>
 </html>
